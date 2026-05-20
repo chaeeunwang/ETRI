@@ -1,0 +1,17 @@
+Model: MultiTaskBiLSTM
+CV: subject-wise time-aware 5-fold
+Metric: Average Log-Loss
+
+OOF Score
+Q1: 0.668629
+Q2: 0.686806
+Q3: 0.667613
+S1: 0.583339
+S2: 0.572020
+S3: 0.548021
+S4: 0.640768
+avg: 0.623885
+
+Output files
+oof: oof_5fold_bilstm_multitask_safe.csv
+submission: submission_5fold_bilstm_multitask_safe.csv

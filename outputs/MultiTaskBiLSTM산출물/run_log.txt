@@ -1,0 +1,142 @@
+(.venv) PS C:\01_ETRI> & c:\01_ETRI\.venv\Scripts\python.exe c:/01_ETRI/code/MultiTaskBiLSTM.py
+train: (450, 10) test: (250, 10) base_all: (700, 2)
+feature_tables: 17
+[MERGE] 1/17 -> (700, 8)
+[MERGE] 2/17 -> (700, 17)
+[MERGE] 3/17 -> (700, 23)
+[MERGE] 4/17 -> (700, 32)
+[MERGE] 5/17 -> (700, 36)
+[MERGE] 6/17 -> (700, 45)
+[MERGE] 7/17 -> (700, 49)
+[MERGE] 8/17 -> (700, 58)
+[MERGE] 9/17 -> (700, 65)
+[MERGE] 10/17 -> (700, 71)
+[MERGE] 11/17 -> (700, 106)
+[MERGE] 12/17 -> (700, 114)
+[MERGE] 13/17 -> (700, 122)
+[MERGE] 14/17 -> (700, 130)
+[MERGE] 15/17 -> (700, 138)
+[MERGE] 16/17 -> (700, 148)
+[MERGE] 17/17 -> (700, 160)
+daily_feat: (700, 958)
+train_df: (450, 966)
+test_df : (250, 966)
+raw num seq features: 956
+daily_feat: (700, 958)
+train_df: (450, 967)
+test_df : (250, 966)
+raw num seq features: 956
+
+================ FOLD 0 ================
+[fold 0] selected seq features: 256
+Fold 0 | Epoch 01 | train 0.68999 | valid 0.68486 | logloss 0.68437
+Fold 0 | Epoch 02 | train 0.67635 | valid 0.66744 | logloss 0.66634
+Fold 0 | Epoch 03 | train 0.64908 | valid 0.65653 | logloss 0.65496
+Fold 0 | Epoch 04 | train 0.63135 | valid 0.64553 | logloss 0.64230
+Fold 0 | Epoch 05 | train 0.61823 | valid 0.63997 | logloss 0.63511
+Fold 0 | Epoch 06 | train 0.59650 | valid 0.63533 | logloss 0.63100
+Fold 0 | Epoch 07 | train 0.59714 | valid 0.63608 | logloss 0.63054
+Fold 0 | Epoch 08 | train 0.59481 | valid 0.64157 | logloss 0.63979
+Fold 0 | Epoch 09 | train 0.58744 | valid 0.64590 | logloss 0.64114
+Fold 0 | Epoch 10 | train 0.58916 | valid 0.63736 | logloss 0.63289
+Fold 0 | Epoch 11 | train 0.57802 | valid 0.64581 | logloss 0.64338
+Fold 0 | Epoch 12 | train 0.56889 | valid 0.65030 | logloss 0.64546
+Fold 0 | Epoch 13 | train 0.55448 | valid 0.65876 | logloss 0.65291
+Fold 0 | Epoch 14 | train 0.54992 | valid 0.65783 | logloss 0.65445
+Fold 0 | Epoch 15 | train 0.53247 | valid 0.66753 | logloss 0.65971
+Early stopping at epoch 15
+[FOLD 0] scores: {'Q1': 0.6411124637714309, 'Q2': 0.6856403432246326, 'Q3': 0.6705812869378995, 'S1': 0.60124308746475, 'S2': 0.6131184558066329, 'S3': 0.5232681284778061, 'S4': 0.6788413312083507, 'avg': 0.6305435852702147}
+
+================ FOLD 1 ================
+[fold 1] selected seq features: 256
+Fold 1 | Epoch 01 | train 0.69041 | valid 0.68001 | logloss 0.67854
+Fold 1 | Epoch 02 | train 0.66851 | valid 0.65273 | logloss 0.64810
+Fold 1 | Epoch 03 | train 0.64275 | valid 0.64790 | logloss 0.64032
+Fold 1 | Epoch 04 | train 0.62812 | valid 0.64693 | logloss 0.63619
+Fold 1 | Epoch 05 | train 0.61578 | valid 0.64954 | logloss 0.63854
+Fold 1 | Epoch 06 | train 0.60531 | valid 0.64498 | logloss 0.63091
+Fold 1 | Epoch 07 | train 0.60377 | valid 0.64427 | logloss 0.62687
+Fold 1 | Epoch 08 | train 0.58959 | valid 0.64535 | logloss 0.62676
+Fold 1 | Epoch 09 | train 0.58251 | valid 0.64103 | logloss 0.62065
+Fold 1 | Epoch 10 | train 0.57811 | valid 0.64238 | logloss 0.62302
+Fold 1 | Epoch 11 | train 0.56744 | valid 0.63832 | logloss 0.61544
+Fold 1 | Epoch 12 | train 0.54432 | valid 0.65601 | logloss 0.63063
+Fold 1 | Epoch 13 | train 0.54235 | valid 0.64605 | logloss 0.62876
+Fold 1 | Epoch 14 | train 0.52850 | valid 0.65259 | logloss 0.63271
+Fold 1 | Epoch 15 | train 0.52535 | valid 0.66064 | logloss 0.63780
+Fold 1 | Epoch 16 | train 0.50505 | valid 0.65469 | logloss 0.62942
+Fold 1 | Epoch 17 | train 0.48612 | valid 0.67599 | logloss 0.65333
+Fold 1 | Epoch 18 | train 0.48063 | valid 0.66911 | logloss 0.64699
+Fold 1 | Epoch 19 | train 0.45378 | valid 0.69477 | logloss 0.67517
+Early stopping at epoch 19
+[FOLD 1] scores: {'Q1': 0.6882314745080599, 'Q2': 0.676792290764091, 'Q3': 0.703856059730344, 'S1': 0.5847943309473421, 'S2': 0.5452229933795703, 'S3': 0.5225582477316182, 'S4': 0.5865979541302713, 'avg': 0.6154361930273281}
+
+================ FOLD 2 ================
+[fold 2] selected seq features: 256
+Fold 2 | Epoch 01 | train 0.68917 | valid 0.68629 | logloss 0.68414
+Fold 2 | Epoch 02 | train 0.67047 | valid 0.67728 | logloss 0.66682
+Fold 2 | Epoch 03 | train 0.64799 | valid 0.66940 | logloss 0.65280
+Fold 2 | Epoch 04 | train 0.63643 | valid 0.65259 | logloss 0.63608
+Fold 2 | Epoch 05 | train 0.63067 | valid 0.64674 | logloss 0.62885
+Fold 2 | Epoch 06 | train 0.61032 | valid 0.64856 | logloss 0.63101
+Fold 2 | Epoch 07 | train 0.60968 | valid 0.64280 | logloss 0.62302
+Fold 2 | Epoch 08 | train 0.59372 | valid 0.64608 | logloss 0.62415
+Fold 2 | Epoch 09 | train 0.58637 | valid 0.65139 | logloss 0.62896
+Fold 2 | Epoch 10 | train 0.57574 | valid 0.65423 | logloss 0.63085
+Fold 2 | Epoch 11 | train 0.56765 | valid 0.65347 | logloss 0.62856
+Fold 2 | Epoch 12 | train 0.55387 | valid 0.66929 | logloss 0.65174
+Fold 2 | Epoch 13 | train 0.55111 | valid 0.66532 | logloss 0.64552
+Fold 2 | Epoch 14 | train 0.53369 | valid 0.67727 | logloss 0.65957
+Fold 2 | Epoch 15 | train 0.51785 | valid 0.67628 | logloss 0.66194
+Early stopping at epoch 15
+[FOLD 2] scores: {'Q1': 0.6902541308434926, 'Q2': 0.7172828965979029, 'Q3': 0.6331344566390369, 'S1': 0.5993091147458837, 'S2': 0.5351654010750292, 'S3': 0.5668441454429962, 'S4': 0.6191449354234113, 'avg': 0.623019297252536}
+
+================ FOLD 3 ================
+[fold 3] selected seq features: 256
+Fold 3 | Epoch 01 | train 0.68522 | valid 0.68243 | logloss 0.68002
+Fold 3 | Epoch 02 | train 0.66583 | valid 0.67449 | logloss 0.66415
+Fold 3 | Epoch 03 | train 0.64131 | valid 0.66370 | logloss 0.64855
+Fold 3 | Epoch 04 | train 0.62966 | valid 0.65002 | logloss 0.63513
+Fold 3 | Epoch 05 | train 0.61544 | valid 0.64937 | logloss 0.63713
+Fold 3 | Epoch 06 | train 0.60533 | valid 0.64527 | logloss 0.62944
+Fold 3 | Epoch 07 | train 0.59936 | valid 0.64669 | logloss 0.63092
+Fold 3 | Epoch 08 | train 0.58732 | valid 0.64814 | logloss 0.63260
+Fold 3 | Epoch 09 | train 0.57619 | valid 0.65813 | logloss 0.63881
+Fold 3 | Epoch 10 | train 0.57283 | valid 0.66578 | logloss 0.64551
+Fold 3 | Epoch 11 | train 0.55979 | valid 0.65675 | logloss 0.63744
+Fold 3 | Epoch 12 | train 0.54342 | valid 0.67559 | logloss 0.65670
+Fold 3 | Epoch 13 | train 0.53771 | valid 0.71505 | logloss 0.68892
+Fold 3 | Epoch 14 | train 0.52491 | valid 0.70383 | logloss 0.68081
+Early stopping at epoch 14
+[FOLD 3] scores: {'Q1': 0.669706028617763, 'Q2': 0.6912101903594997, 'Q3': 0.625268998805902, 'S1': 0.6201963651753045, 'S2': 0.5745494571780428, 'S3': 0.5346437251193686, 'S4': 0.6904785141825662, 'avg': 0.6294361827769209}
+
+================ FOLD 4 ================
+[fold 4] selected seq features: 256
+Fold 4 | Epoch 01 | train 0.68291 | valid 0.68212 | logloss 0.67449
+Fold 4 | Epoch 02 | train 0.65633 | valid 0.68528 | logloss 0.65912
+Fold 4 | Epoch 03 | train 0.63931 | valid 0.67311 | logloss 0.64079
+Fold 4 | Epoch 04 | train 0.62532 | valid 0.66930 | logloss 0.63331
+Fold 4 | Epoch 05 | train 0.61035 | valid 0.67317 | logloss 0.63039
+Fold 4 | Epoch 06 | train 0.60195 | valid 0.65643 | logloss 0.62083
+Fold 4 | Epoch 07 | train 0.58911 | valid 0.66201 | logloss 0.62558
+Fold 4 | Epoch 08 | train 0.58766 | valid 0.67397 | logloss 0.63242
+Fold 4 | Epoch 09 | train 0.58011 | valid 0.68192 | logloss 0.63719
+Fold 4 | Epoch 10 | train 0.56243 | valid 0.69059 | logloss 0.63723
+Fold 4 | Epoch 11 | train 0.55664 | valid 0.70173 | logloss 0.64680
+Fold 4 | Epoch 12 | train 0.54595 | valid 0.70116 | logloss 0.65019
+Fold 4 | Epoch 13 | train 0.54420 | valid 0.71252 | logloss 0.64961
+Fold 4 | Epoch 14 | train 0.53794 | valid 0.71586 | logloss 0.66089
+Early stopping at epoch 14
+[FOLD 4] scores: {'Q1': 0.6539130453292533, 'Q2': 0.661811931485204, 'Q3': 0.7053182693086645, 'S1': 0.5069328631470496, 'S2': 0.5919554148893141, 'S3': 0.5967867063028409, 'S4': 0.6291169735350526, 'avg': 0.6208336005710542}
+
+========== LSTM OOF ==========
+Q1: 0.668629
+Q2: 0.686806
+Q3: 0.667613
+S1: 0.583339
+S2: 0.572020
+S3: 0.548021
+S4: 0.640768
+avg: 0.623885
+saved: ./data\oof_5fold_bilstm_multitask_safe.csv
+saved: ./data\submission_5fold_bilstm_multitask_safe.csv
