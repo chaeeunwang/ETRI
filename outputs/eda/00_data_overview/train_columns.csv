@@ -1,0 +1,11 @@
+﻿column,dtype,non_null_count,null_count,null_ratio,unique_count
+subject_id,str,450,0,0.0,10
+sleep_date,str,450,0,0.0,151
+lifelog_date,str,450,0,0.0,151
+Q1,int64,450,0,0.0,2
+Q2,int64,450,0,0.0,2
+Q3,int64,450,0,0.0,2
+S1,int64,450,0,0.0,2
+S2,int64,450,0,0.0,2
+S3,int64,450,0,0.0,2
+S4,int64,450,0,0.0,2

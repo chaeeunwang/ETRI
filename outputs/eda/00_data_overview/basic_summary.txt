@@ -1,0 +1,65 @@
+# Step 0. Data Overview Summary
+
+## 1. File Paths
+- train path: data\ch2026_metrics_train.csv
+- test/submission path: data\ch2026_submission_sample.csv
+- output dir: outputs\eda\00_data_overview
+
+## 2. Shape
+- train rows: 450
+- train columns: 10
+- test rows: 250
+- test columns: 10
+
+## 3. Subject
+- train subject column: subject_id
+- test subject column: subject_id
+- train subject count: 10
+- test subject count: 10
+
+## 4. Target Columns
+- target candidates: ['Q1', 'Q2', 'Q3', 'S1', 'S2', 'S3', 'S4']
+- train target columns: ['Q1', 'Q2', 'Q3', 'S1', 'S2', 'S3', 'S4']
+- test/submission target columns: ['Q1', 'Q2', 'Q3', 'S1', 'S2', 'S3', 'S4']
+- S4 in train: True
+- S4 in test/submission: True
+
+## 5. Key Columns for Duplicate Check
+- train key columns: ['subject_id', 'lifelog_date']
+- test key columns: ['subject_id', 'lifelog_date']
+- train duplicated rows: 0
+- test duplicated rows: 0
+
+## 6. Train Date Summary
+- lifelog_date exists: True
+- lifelog_date min: 2024-06-03 00:00:00
+- lifelog_date max: 2024-11-14 00:00:00
+- lifelog_date null count: 0
+- sleep_date exists: True
+- sleep_date min: 2024-06-04 00:00:00
+- sleep_date max: 2024-11-15 00:00:00
+- sleep_date null count: 0
+
+## 7. Test Date Summary
+- lifelog_date exists: True
+- lifelog_date min: 2024-07-06 00:00:00
+- lifelog_date max: 2024-11-19 00:00:00
+- lifelog_date null count: 0
+- sleep_date exists: True
+- sleep_date min: 2024-07-07 00:00:00
+- sleep_date max: 2024-11-20 00:00:00
+- sleep_date null count: 0
+
+## 8. sleep_date - lifelog_date Difference in Train
+
+  - min diff days: 1
+  - max diff days: 1
+  - mean diff days: 1.0
+  - diff value counts:
+1    450
+
+## 9. Immediate Checkpoints
+- Check whether train/test subjects are identical.
+- Check whether subject_id + lifelog_date is unique.
+- Check whether sleep_date and lifelog_date have a consistent relationship.
+- Check whether S4 is actually required by submission format.
