@@ -1,51 +1,89 @@
 # Subject Distribution EDA Summary
+
 ## 1. 생성 목적
-- subject별 데이터 수, 날짜 범위, 날짜 연속성, target prior를 확인했습니다.
-- 현재 sequence 모델이 lookback=14를 사용한다고 가정하고, subject별 최대 연속 일수가 14일 이상인지 점검했습니다.
+
+본 분석의 목적은 subject별 데이터 규모, 날짜 범위, 날짜 연속성, target prior를 확인하여 현재 sequence 기반 BiLSTM 구조가 적절한지 판단하는 것이다.
+
+특히 현재 모델이 `lookback=14`를 사용하고 있으므로, 각 subject가 최소 14일 이상의 연속 관측 구간을 충분히 보유하고 있는지 확인하였다. 또한 subject별 target prior 차이를 분석하여 subject embedding, personalized feature, subject-aware validation의 필요성을 점검하였다.
+
+---
 
 ## 2. Subject별 row 수
+
+### 2.1 전체 요약
+
 - train row 최소값: 33
 - train row 최대값: 57
 - train row 표준편차: 8.300
-- train row가 적은 subject TOP3:
-  - id03: train_rows=33, test_rows=21
-  - id10: train_rows=33, test_rows=22
-  - id09: train_rows=41, test_rows=27
+
+subject별 train row 수에는 일정 수준의 차이가 존재한다. 특히 일부 subject는 학습 데이터가 30일대에 불과하므로, 전체 모델이 데이터가 많은 subject 중심으로 학습될 가능성이 있다.
+
+### 2.2 train row가 적은 subject TOP3
+
+| subject_id | train_rows | test_rows |
+| ---------- | ---------: | --------: |
+| id03       |         33 |        21 |
+| id10       |         33 |        22 |
+| id09       |         41 |        27 |
+
+### 2.3 판단
+
+id03, id10은 train row가 33개로 가장 적다. 이들은 sequence 모델에서 학습 가능한 window 수 자체가 적을 가능성이 높다. 따라서 단순 K-Fold 또는 무작위 sampling만으로는 subject별 학습 안정성을 보장하기 어렵다.
+
+후속 실험에서는 subject별 성능을 반드시 분리해서 확인해야 하며, 특정 subject에서만 성능이 급락하는지 확인할 필요가 있다.
+
+---
 
 ## 3. 날짜 연속성
+
+### 3.1 전체 요약
+
 - train에서 날짜 gap이 있는 subject 수: 10
-- train에서 max_consecutive_days < 14인 subject 수: 5
-- lookback 위험 subject:
-  - id03: max_consecutive_days=6, missing_days_count=25, max_gap_days=14
-  - id05: max_consecutive_days=10, missing_days_count=35, max_gap_days=12
-  - id06: max_consecutive_days=13, missing_days_count=29, max_gap_days=9
-  - id09: max_consecutive_days=11, missing_days_count=24, max_gap_days=17
-  - id10: max_consecutive_days=5, missing_days_count=38, max_gap_days=25
+- train에서 `max_consecutive_days < 14`인 subject 수: 5
 
-## 4. Target prior 차이
-- subject별 class ratio 변동성이 큰 target/class TOP10:
-  - target=S3, class=0: mean=0.348, std=0.247, min=0.042, max=0.864
-  - target=S3, class=1: mean=0.652, std=0.247, min=0.136, max=0.958
-  - target=S2, class=0: mean=0.365, std=0.219, min=0.083, max=0.750
-  - target=S2, class=1: mean=0.635, std=0.219, min=0.250, max=0.917
-  - target=S4, class=0: mean=0.451, std=0.195, min=0.146, max=0.848
-  - target=S4, class=1: mean=0.549, std=0.195, min=0.152, max=0.854
-  - target=S1, class=1: mean=0.678, std=0.180, min=0.446, max=0.938
-  - target=S1, class=0: mean=0.322, std=0.180, min=0.062, max=0.554
-  - target=Q1, class=1: mean=0.507, std=0.175, min=0.146, max=0.848
-  - target=Q1, class=0: mean=0.493, std=0.175, min=0.152, max=0.854
+모든 subject에서 날짜 gap이 존재한다. 즉, lifelog_date가 완전히 연속적인 시계열로 제공되지 않는다.
 
-## 5. 1차 판단
-- subject별 row 수 차이가 크면 subject별 sampling 또는 subject-aware validation을 검토해야 합니다.
-- max_consecutive_days가 14보다 짧은 subject가 있으면 lookback 축소, masking, sequence padding 정책을 재검토해야 합니다.
-- subject별 target prior 차이가 크면 subject prior feature, subject embedding, personalized normalization을 검토해야 합니다.
-- 날짜 gap이 크면 random split보다 time-aware split을 유지하는 것이 안전합니다.
+### 3.2 lookback=14 위험 subject
 
-## 6. 생성 파일
-- subject_row_count.csv
-- subject_date_range.csv
-- subject_missing_dates.csv
-- subject_timeline_plot.png
-- subject_target_prior.csv
-- subject_target_prior_wide.csv
-- subject_summary.md
+| subject_id | max_consecutive_days | missing_days_count | max_gap_days |
+| ---------- | -------------------: | -----------------: | -----------: |
+| id03       |                    6 |                 25 |           14 |
+| id05       |                   10 |                 35 |           12 |
+| id06       |                   13 |                 29 |            9 |
+| id09       |                   11 |                 24 |           17 |
+| id10       |                    5 |                 38 |           25 |
+
+### 3.3 판단
+
+현재 `lookback=14`는 그대로 사용하기 어렵다.
+
+전체 subject 10명 중 5명이 14일 연속 구간을 확보하지 못한다. 특히 id03과 id10은 최대 연속 구간이 각각 6일, 5일에 불과하다. 이 상태에서 14일 window를 강제로 구성하면 모델은 실제 14일 생활 패턴을 학습하는 것이 아니라, 불연속 날짜, padding, 결측 패턴을 함께 학습할 가능성이 높다.
+
+따라서 현재 BiLSTM의 `lookback=14`는 과한 설정일 가능성이 크다.
+
+### 3.4 후속 조치
+
+lookback 길이를 고정하지 말고 아래 후보를 비교해야 한다.
+
+| 실험 | lookback | 목적                              |
+| ---- | -------: | --------------------------------- |
+| A    |       14 | 기존 baseline 유지                |
+| B    |        7 | 1주일 단위 생활 패턴 확인         |
+| C    |        5 | id03, id10까지 고려한 현실적 후보 |
+| D    |        3 | 짧은 시계열 기준 안전한 비교군    |
+
+현재 EDA 결과 기준으로는 `lookback=5` 또는 `lookback=7`이 가장 현실적인 후보이다.
+
+---
+
+## 4. Sequence window 품질 검증 필요성
+
+현재 분석은 subject별 최대 연속 일수와 missing date를 확인한 단계이다. 그러나 실제 BiLSTM 입력 window가 얼마나 유효한지는 아직 별도 검증이 필요하다.
+
+따라서 다음 파일을 추가 생성해야 한다.
+
+```text
+outputs/eda/02_subject_distribution/
+├── sequence_window_quality.csv
+└── sequence_window_quality_summary.md
+```
