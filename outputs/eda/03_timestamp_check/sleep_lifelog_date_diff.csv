@@ -1,0 +1,3 @@
+﻿split,status,diff_days,count,ratio
+train,ok,1,450,1.0
+test,ok,1,250,1.0

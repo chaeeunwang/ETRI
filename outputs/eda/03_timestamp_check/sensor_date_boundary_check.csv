@@ -1,0 +1,13 @@
+﻿sensor,file_path,row_count,global_lifelog_min,global_lifelog_max,sensor_timestamp_min,sensor_timestamp_max,too_early_count,too_late_count,too_early_ratio,too_late_ratio,boundary_risk
+ch2025_mACStatus,data\ch2025_data_items\ch2025_mACStatus.parquet,939896,2024-06-03,2024-11-19,2024-06-03 12:57:00,2024-11-19 23:59:00,0,0,0.0,0.0,False
+ch2025_mActivity,data\ch2025_data_items\ch2025_mActivity.parquet,961062,2024-06-03,2024-11-19,2024-06-03 12:57:00,2024-11-19 23:59:00,0,0,0.0,0.0,False
+ch2025_mAmbience,data\ch2025_data_items\ch2025_mAmbience.parquet,476577,2024-06-03,2024-11-19,2024-06-03 13:00:10,2024-11-19 23:58:10,0,0,0.0,0.0,False
+ch2025_mBle,data\ch2025_data_items\ch2025_mBle.parquet,21830,2024-06-03,2024-11-19,2024-06-03 13:07:00,2024-11-19 21:27:00,0,0,0.0,0.0,False
+ch2025_mGps,data\ch2025_data_items\ch2025_mGps.parquet,800611,2024-06-03,2024-11-19,2024-06-03 12:57:00,2024-11-19 23:59:00,0,0,0.0,0.0,False
+ch2025_mLight,data\ch2025_data_items\ch2025_mLight.parquet,96258,2024-06-03,2024-11-19,2024-06-03 12:57:00,2024-11-19 23:57:00,0,0,0.0,0.0,False
+ch2025_mScreenStatus,data\ch2025_data_items\ch2025_mScreenStatus.parquet,939653,2024-06-03,2024-11-19,2024-06-03 12:57:00,2024-11-19 23:59:00,0,0,0.0,0.0,False
+ch2025_mUsageStats,data\ch2025_data_items\ch2025_mUsageStats.parquet,45197,2024-06-03,2024-11-19,2024-06-09 11:00:00,2024-11-19 22:10:00,0,0,0.0,0.0,False
+ch2025_mWifi,data\ch2025_data_items\ch2025_mWifi.parquet,76336,2024-06-03,2024-11-19,2024-06-03 12:57:00,2024-11-19 23:57:00,0,0,0.0,0.0,False
+ch2025_wHr,data\ch2025_data_items\ch2025_wHr.parquet,382918,2024-06-03,2024-11-19,2024-06-03 14:28:00,2024-11-19 15:37:00,0,0,0.0,0.0,False
+ch2025_wLight,data\ch2025_data_items\ch2025_wLight.parquet,633741,2024-06-03,2024-11-19,2024-06-03 14:28:00,2024-11-19 23:59:00,0,0,0.0,0.0,False
+ch2025_wPedo,data\ch2025_data_items\ch2025_wPedo.parquet,748100,2024-06-03,2024-11-19,2024-06-03 14:15:00,2024-11-19 23:59:00,0,0,0.0,0.0,False
