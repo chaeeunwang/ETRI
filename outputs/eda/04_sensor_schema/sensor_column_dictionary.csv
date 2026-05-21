@@ -1,0 +1,43 @@
+﻿sensor_name,raw_file_stem,file_name,column_name,inferred_role,dtype,null_ratio_sample,unique_count_sample,example_values
+mACStatus,ch2025_mACStatus,ch2025_mACStatus.parquet,subject_id,subject_candidate,str,0.0,1,id01 | id01 | id01
+mACStatus,ch2025_mACStatus,ch2025_mACStatus.parquet,timestamp,timestamp_candidate,datetime64[ns],0.0,5000,2024-06-26 12:03:00 | 2024-06-26 12:04:00 | 2024-06-26 12:05:00
+mACStatus,ch2025_mACStatus,ch2025_mACStatus.parquet,m_charging,value_candidate,int64,0.0,2,0 | 0 | 0
+mActivity,ch2025_mActivity,ch2025_mActivity.parquet,subject_id,subject_candidate,str,0.0,1,id01 | id01 | id01
+mActivity,ch2025_mActivity,ch2025_mActivity.parquet,timestamp,timestamp_candidate,datetime64[ns],0.0,5000,2024-06-26 12:03:00 | 2024-06-26 12:04:00 | 2024-06-26 12:05:00
+mActivity,ch2025_mActivity,ch2025_mActivity.parquet,m_activity,value_candidate,int64,0.0,5,4 | 0 | 0
+mAmbience,ch2025_mAmbience,ch2025_mAmbience.parquet,subject_id,subject_candidate,str,0.0,1,id01 | id01 | id01
+mAmbience,ch2025_mAmbience,ch2025_mAmbience.parquet,timestamp,timestamp_candidate,datetime64[ns],0.0,5000,2024-06-26 13:00:10 | 2024-06-26 13:02:10 | 2024-06-26 13:04:10
+mAmbience,ch2025_mAmbience,ch2025_mAmbience.parquet,m_ambience,unknown,object,0.0,278,"[array(['Music', '0.30902618'], dtype=object), array(['Vehicle', '0.081680894'], dtype=object), array(['Motor vehicle (road)', '0.04035286'], dtype=object), array(['Outside, urban or manmade', '0.0371... | [array(['Music', '0.62307084'], dtype=object), array(['Vehicle', '0.021118319'], dtype=object), array(['Bell', '0.018510727'], dtype=object), array(['Hiss', '0.013137147'], dtype=object), array(['Jing... | [array(['Horse', '0.25209898'], dtype=object), array(['Animal', '0.24263993'], dtype=object), array(['Clip-clop', '0.24169719'], dtype=object), array(['Outside, rural or natural', '0.20218423'], dtype..."
+mBle,ch2025_mBle,ch2025_mBle.parquet,subject_id,subject_candidate,str,0.0,3,id01 | id01 | id01
+mBle,ch2025_mBle,ch2025_mBle.parquet,timestamp,timestamp_candidate,datetime64[ns],0.0,4934,2024-06-26 12:13:00 | 2024-06-26 12:23:00 | 2024-06-26 12:33:00
+mBle,ch2025_mBle,ch2025_mBle.parquet,m_ble,unknown,object,0.0,986,"[{'address': '00:15:7C:11:80:8D', 'device_class': '0', 'rssi': -82}, {'address': '01:B1:D2:20:9E:3A', 'device_class': '0', 'rssi': -61}, {'address': '04:33:1F:D9:C1:50', 'device_class': '0', 'rssi': -... | [{'address': '0A:B1:26:4D:76:21', 'device_class': '0', 'rssi': -75}, {'address': '0B:A9:3D:A8:98:58', 'device_class': '0', 'rssi': -89}, {'address': '0D:86:18:82:EC:15', 'device_class': '0', 'rssi': -... | [{'address': '04:F5:AE:39:95:E0', 'device_class': '0', 'rssi': -44}, {'address': '0D:BE:52:E6:13:00', 'device_class': '0', 'rssi': -80}, {'address': '0F:13:09:75:36:FE', 'device_class': '0', 'rssi': -..."
+mGps,ch2025_mGps,ch2025_mGps.parquet,subject_id,subject_candidate,str,0.0,1,id01 | id01 | id01
+mGps,ch2025_mGps,ch2025_mGps.parquet,timestamp,timestamp_candidate,datetime64[ns],0.0,5000,2024-06-26 12:03:00 | 2024-06-26 12:04:00 | 2024-06-26 12:05:00
+mGps,ch2025_mGps,ch2025_mGps.parquet,m_gps,unknown,object,0.0,968,"[{'altitude': 110.6, 'latitude': 0.2077385, 'longitude': 0.170027, 'speed': 0.0}, {'altitude': 110.8, 'latitude': 0.2077759, 'longitude': 0.1699851, 'speed': 0.721}, {'altitude': 110.8, 'latitude': 0.... | [{'altitude': 110.8, 'latitude': 0.2078068, 'longitude': 0.1699642, 'speed': 0.0602}, {'altitude': 110.8, 'latitude': 0.2078062, 'longitude': 0.1699632, 'speed': 0.0167}, {'altitude': 110.7, 'latitude... | [{'altitude': 110.7, 'latitude': 0.2078214, 'longitude': 0.1699583, 'speed': 0.0601}, {'altitude': 110.7, 'latitude': 0.2078223, 'longitude': 0.1699578, 'speed': 0.0432}, {'altitude': 110.7, 'latitude..."
+mLight,ch2025_mLight,ch2025_mLight.parquet,subject_id,subject_candidate,str,0.0,1,id01 | id01 | id01
+mLight,ch2025_mLight,ch2025_mLight.parquet,timestamp,timestamp_candidate,datetime64[ns],0.0,5000,2024-06-26 12:03:00 | 2024-06-26 12:13:00 | 2024-06-26 12:23:00
+mLight,ch2025_mLight,ch2025_mLight.parquet,m_light,value_candidate,float64,0.0,700,534.0 | 846.0 | 826.0
+mScreenStatus,ch2025_mScreenStatus,ch2025_mScreenStatus.parquet,subject_id,subject_candidate,str,0.0,1,id01 | id01 | id01
+mScreenStatus,ch2025_mScreenStatus,ch2025_mScreenStatus.parquet,timestamp,timestamp_candidate,datetime64[ns],0.0,5000,2024-06-26 12:03:00 | 2024-06-26 12:04:00 | 2024-06-26 12:05:00
+mScreenStatus,ch2025_mScreenStatus,ch2025_mScreenStatus.parquet,m_screen_use,value_candidate,int64,0.0,2,0 | 0 | 0
+mUsageStats,ch2025_mUsageStats,ch2025_mUsageStats.parquet,subject_id,subject_candidate,str,0.0,1,id01 | id01 | id01
+mUsageStats,ch2025_mUsageStats,ch2025_mUsageStats.parquet,timestamp,timestamp_candidate,datetime64[ns],0.0,5000,2024-06-26 13:00:00 | 2024-06-26 13:10:00 | 2024-06-26 13:20:00
+mUsageStats,ch2025_mUsageStats,ch2025_mUsageStats.parquet,m_usage_stats,unknown,object,0.0,997,"[{'app_name': '\xa0캐시워크', 'total_time': 69}, {'app_name': 'NAVER', 'total_time': 549}, {'app_name': '\xa0✝️성경일독Q', 'total_time': 7337}] | [{'app_name': '통화', 'total_time': 26419}, {'app_name': '토스', 'total_time': 119896}, {'app_name': '전화', 'total_time': 59284}, {'app_name': '카카오톡', 'total_time': 6744}, {'app_name': 'NAVER', 'total_time... | [{'app_name': '메시지', 'total_time': 388651}, {'app_name': 'One UI 홈', 'total_time': 211334}]"
+mWifi,ch2025_mWifi,ch2025_mWifi.parquet,subject_id,subject_candidate,str,0.0,1,id01 | id01 | id01
+mWifi,ch2025_mWifi,ch2025_mWifi.parquet,timestamp,timestamp_candidate,datetime64[ns],0.0,5000,2024-06-26 12:03:00 | 2024-06-26 12:13:00 | 2024-06-26 12:23:00
+mWifi,ch2025_mWifi,ch2025_mWifi.parquet,m_wifi,unknown,object,0.0,1000,"[{'bssid': 'a0:0f:37:9a:5d:8b', 'rssi': -78}, {'bssid': 'a0:0f:37:9a:5d:8c', 'rssi': -78}, {'bssid': 'a0:0f:37:9a:5d:8d', 'rssi': -78}, {'bssid': 'a0:0f:37:9a:5d:8e', 'rssi': -78}, {'bssid': 'a0:0f:37... | [{'bssid': 'a0:0f:37:9a:5d:8b', 'rssi': -79}, {'bssid': 'a0:0f:37:9a:5d:8c', 'rssi': -80}, {'bssid': '10:e3:c7:0a:74:d1', 'rssi': -78}, {'bssid': 'a0:0f:37:9a:5d:8d', 'rssi': -80}, {'bssid': 'a0:0f:37... | [{'bssid': '10:e3:c7:0a:74:d1', 'rssi': -78}, {'bssid': '5a:86:94:10:a9:80', 'rssi': -79}, {'bssid': 'a0:0f:37:96:56:ef', 'rssi': -61}, {'bssid': 'a0:0f:37:96:56:ee', 'rssi': -61}, {'bssid': '86:25:19..."
+wHr,ch2025_wHr,ch2025_wHr.parquet,subject_id,subject_candidate,str,0.0,1,id01 | id01 | id01
+wHr,ch2025_wHr,ch2025_wHr.parquet,timestamp,timestamp_candidate,datetime64[ns],0.0,5000,2024-06-26 12:23:00 | 2024-06-26 12:24:00 | 2024-06-26 12:25:00
+wHr,ch2025_wHr,ch2025_wHr.parquet,heart_rate,value_candidate,object,0.0,976,"[134, 134, 135, 133, 134, 135, 134, 135, 134, 133, 133, 133, 132, 132, 131, 131, 131, 132, 132, 134, 134, 134, 132, 130, 128, 126, 126, 126, 127, 129, 130, 129, 130, 130, 127, 127, 126, 125, 123] | [123, 122, 121, 120, 121, 121, 120, 118, 119, 119, 120, 120, 119, 118, 119, 121, 121, 121, 119, 119, 120, 121, 122, 121, 121, 122, 122, 122, 122, 123, 124, 123, 122, 121, 122, 123, 125, 123, 122, 120,... | [120, 119, 117, 116, 119, 121, 123, 123, 121, 120, 120, 120, 119, 119, 118, 119, 119, 118, 117, 116, 116, 116, 116, 116, 116, 116, 114, 113, 112, 114, 114, 117, 120, 120, 120, 119, 120, 120, 122, 121,..."
+wLight,ch2025_wLight,ch2025_wLight.parquet,subject_id,subject_candidate,str,0.0,1,id01 | id01 | id01
+wLight,ch2025_wLight,ch2025_wLight.parquet,timestamp,timestamp_candidate,datetime64[ns],0.0,5000,2024-06-26 12:17:00 | 2024-06-26 12:18:00 | 2024-06-26 12:19:00
+wLight,ch2025_wLight,ch2025_wLight.parquet,w_light,value_candidate,float64,0.0,290,633.0 | 483.0 | 541.0
+wPedo,ch2025_wPedo,ch2025_wPedo.parquet,subject_id,subject_candidate,str,0.0,1,id01 | id01 | id01
+wPedo,ch2025_wPedo,ch2025_wPedo.parquet,timestamp,timestamp_candidate,datetime64[ns],0.0,5000,2024-06-26 12:09:00 | 2024-06-26 12:10:00 | 2024-06-26 12:11:00
+wPedo,ch2025_wPedo,ch2025_wPedo.parquet,step,value_candidate,int64,0.0,94,10 | 0 | 0
+wPedo,ch2025_wPedo,ch2025_wPedo.parquet,step_frequency,value_candidate,float64,0.0,94,0.16666666666666666 | 0.0 | 0.0
+wPedo,ch2025_wPedo,ch2025_wPedo.parquet,running_step,value_candidate,int64,0.0,1,0 | 0 | 0
+wPedo,ch2025_wPedo,ch2025_wPedo.parquet,walking_step,value_candidate,int64,0.0,1,0 | 0 | 0
+wPedo,ch2025_wPedo,ch2025_wPedo.parquet,distance,value_candidate,float64,0.0,282,8.329999923706055 | 0.0 | 0.0
+wPedo,ch2025_wPedo,ch2025_wPedo.parquet,speed,value_candidate,float64,0.0,282,0.13883333206176757 | 0.0 | 0.0
+wPedo,ch2025_wPedo,ch2025_wPedo.parquet,burned_calories,value_candidate,float64,0.0,212,0.0 | 0.0 | 0.0
