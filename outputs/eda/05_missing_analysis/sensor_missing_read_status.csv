@@ -1,0 +1,13 @@
+﻿file,sensor,subject_col,date_col,time_col,status,reason,invalid_date_rows
+data\ch2025_data_items\ch2025_mACStatus.parquet,ch2025_mACStatus,subject_id,,timestamp,ok,,0
+data\ch2025_data_items\ch2025_mActivity.parquet,ch2025_mActivity,subject_id,,timestamp,ok,,0
+data\ch2025_data_items\ch2025_mAmbience.parquet,ch2025_mAmbience,subject_id,,timestamp,ok,,0
+data\ch2025_data_items\ch2025_mBle.parquet,ch2025_mBle,subject_id,,timestamp,ok,,0
+data\ch2025_data_items\ch2025_mGps.parquet,ch2025_mGps,subject_id,,timestamp,ok,,0
+data\ch2025_data_items\ch2025_mLight.parquet,ch2025_mLight,subject_id,,timestamp,ok,,0
+data\ch2025_data_items\ch2025_mScreenStatus.parquet,ch2025_mScreenStatus,subject_id,,timestamp,ok,,0
+data\ch2025_data_items\ch2025_mUsageStats.parquet,ch2025_mUsageStats,subject_id,,timestamp,ok,,0
+data\ch2025_data_items\ch2025_mWifi.parquet,ch2025_mWifi,subject_id,,timestamp,ok,,0
+data\ch2025_data_items\ch2025_wHr.parquet,ch2025_wHr,subject_id,,timestamp,ok,,0
+data\ch2025_data_items\ch2025_wLight.parquet,ch2025_wLight,subject_id,,timestamp,ok,,0
+data\ch2025_data_items\ch2025_wPedo.parquet,ch2025_wPedo,subject_id,,timestamp,ok,,0
