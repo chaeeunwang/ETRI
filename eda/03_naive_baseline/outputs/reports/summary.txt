@@ -1,0 +1,19 @@
+# Naive Baseline Summary
+
+- global_prior: 전체 train label 분포만 사용한 가장 기본 baseline입니다.
+- subject_prior_smoothed_in_sample_reference: subject별 prior 효과 확인용입니다. 실제 성능 추정용으로는 chronological validation에서 다시 계산해야 합니다.
+
+- Q1 / global_prior: logloss=0.6931, acc=0.504, macro_f1=0.335
+- Q1 / subject_prior_smoothed_in_sample_reference: logloss=0.6404, acc=0.607, macro_f1=0.603
+- Q2 / global_prior: logloss=0.6854, acc=0.562, macro_f1=0.360
+- Q2 / subject_prior_smoothed_in_sample_reference: logloss=0.6464, acc=0.609, macro_f1=0.579
+- Q3 / global_prior: logloss=0.6730, acc=0.600, macro_f1=0.375
+- Q3 / subject_prior_smoothed_in_sample_reference: logloss=0.6431, acc=0.624, macro_f1=0.559
+- S1 / global_prior: logloss=0.6252, acc=0.682, macro_f1=0.406
+- S1 / subject_prior_smoothed_in_sample_reference: logloss=0.5558, acc=0.696, macro_f1=0.558
+- S2 / global_prior: logloss=0.6468, acc=0.651, macro_f1=0.394
+- S2 / subject_prior_smoothed_in_sample_reference: logloss=0.5558, acc=0.720, macro_f1=0.636
+- S3 / global_prior: logloss=0.6396, acc=0.662, macro_f1=0.398
+- S3 / subject_prior_smoothed_in_sample_reference: logloss=0.5180, acc=0.733, macro_f1=0.609
+- S4 / global_prior: logloss=0.6859, acc=0.560, macro_f1=0.359
+- S4 / subject_prior_smoothed_in_sample_reference: logloss=0.6232, acc=0.636, macro_f1=0.605

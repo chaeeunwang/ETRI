@@ -1,0 +1,11 @@
+# Subject Prior Summary
+
+Detected subject column: subject_id
+
+- Q1: subject prior range=0.703, std=0.175
+- Q2: subject prior range=0.422, std=0.147
+- Q3: subject prior range=0.333, std=0.124
+- S1: subject prior range=0.491, std=0.180
+- S2: subject prior range=0.667, std=0.219
+- S3: subject prior range=0.822, std=0.247
+- S4: subject prior range=0.703, std=0.195
