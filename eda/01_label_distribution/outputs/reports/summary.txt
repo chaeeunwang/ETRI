@@ -1,0 +1,9 @@
+# Label Distribution Summary
+
+- Q1: valid=450, classes=2, majority=0 (0.504), missing=0
+- Q2: valid=450, classes=2, majority=1 (0.562), missing=0
+- Q3: valid=450, classes=2, majority=1 (0.600), missing=0
+- S1: valid=450, classes=2, majority=1 (0.682), missing=0
+- S2: valid=450, classes=2, majority=1 (0.651), missing=0
+- S3: valid=450, classes=2, majority=1 (0.662), missing=0
+- S4: valid=450, classes=2, majority=1 (0.560), missing=0

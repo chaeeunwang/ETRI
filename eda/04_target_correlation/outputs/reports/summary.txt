@@ -1,0 +1,12 @@
+# Target Correlation Summary
+
+- S2 ↔ S4: spearman=0.478, pearson=0.478, n=450
+- S2 ↔ S3: spearman=0.394, pearson=0.394, n=450
+- S1 ↔ S2: spearman=0.382, pearson=0.382, n=450
+- Q1 ↔ S1: spearman=0.361, pearson=0.361, n=450
+- Q2 ↔ Q3: spearman=0.340, pearson=0.340, n=450
+- Q1 ↔ Q2: spearman=0.122, pearson=0.122, n=450
+- Q1 ↔ S3: spearman=-0.119, pearson=-0.119, n=450
+- S1 ↔ S3: spearman=0.118, pearson=0.118, n=450
+- S1 ↔ S4: spearman=0.107, pearson=0.107, n=450
+- Q1 ↔ Q3: spearman=0.102, pearson=0.102, n=450
