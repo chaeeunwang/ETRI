@@ -1,0 +1,111 @@
+Loading raw data...
+train: (450, 10), test: (250, 10)
+Extracting features...
+  mActivity...
+  wPedo...
+  wHr...
+  mScreenStatus...
+  mLight...
+  wLight...
+  mACStatus...
+  mGps...
+  mUsageStats...
+  mWifi...
+  mBle...
+  mAmbience...
+  sleep_morning: wHr...
+  sleep_morning: wPedo...
+  sleep_morning: mActivity...
+  sleep_morning: mScreenStatus...
+  sleep_morning: wLight...
+feat_all: (700, 89), sleep_feats: (700, 32)
+Total features: 314
+
+  === Target: Q1 | pos_rate: 0.496 ===
+    seed=42: OOF log_loss=0.6059
+    seed=1234: OOF log_loss=0.6078
+    seed=9999: OOF log_loss=0.6081
+    seed=7: OOF log_loss=0.6158
+    seed=314: OOF log_loss=0.6166
+    seed=2025: OOF log_loss=0.6164
+    seed=777: OOF log_loss=0.6340
+    seed=555: OOF log_loss=0.6072
+  Ensemble OOF [Q1]: 0.6002
+
+  === Target: Q2 | pos_rate: 0.562 ===
+    seed=42: OOF log_loss=0.6176
+    seed=1234: OOF log_loss=0.6098
+    seed=9999: OOF log_loss=0.6084
+    seed=7: OOF log_loss=0.5967
+    seed=314: OOF log_loss=0.6151
+    seed=2025: OOF log_loss=0.6251
+    seed=777: OOF log_loss=0.5922
+    seed=555: OOF log_loss=0.6207
+  Ensemble OOF [Q2]: 0.5996
+
+  === Target: Q3 | pos_rate: 0.600 ===
+    seed=42: OOF log_loss=0.6048
+    seed=1234: OOF log_loss=0.6190
+    seed=9999: OOF log_loss=0.6095
+    seed=7: OOF log_loss=0.6126
+    seed=314: OOF log_loss=0.6055
+    seed=2025: OOF log_loss=0.6143
+    seed=777: OOF log_loss=0.6168
+    seed=555: OOF log_loss=0.6182
+  Ensemble OOF [Q3]: 0.6032
+
+  === Target: S1 | pos_rate: 0.682 ===
+    seed=42: OOF log_loss=0.5335
+    seed=1234: OOF log_loss=0.5423
+    seed=9999: OOF log_loss=0.5480
+    seed=7: OOF log_loss=0.5536
+    seed=314: OOF log_loss=0.5487
+    seed=2025: OOF log_loss=0.5457
+    seed=777: OOF log_loss=0.5580
+    seed=555: OOF log_loss=0.5429
+  Ensemble OOF [S1]: 0.5378
+
+  === Target: S2 | pos_rate: 0.651 ===
+    seed=42: OOF log_loss=0.5807
+    seed=1234: OOF log_loss=0.5788
+    seed=9999: OOF log_loss=0.5632
+    seed=7: OOF log_loss=0.5668
+    seed=314: OOF log_loss=0.5634
+    seed=2025: OOF log_loss=0.5682
+    seed=777: OOF log_loss=0.5666
+    seed=555: OOF log_loss=0.5741
+  Ensemble OOF [S2]: 0.5610
+
+  === Target: S3 | pos_rate: 0.662 ===
+    seed=42: OOF log_loss=0.5626
+    seed=1234: OOF log_loss=0.5591
+    seed=9999: OOF log_loss=0.5558
+    seed=7: OOF log_loss=0.5535
+    seed=314: OOF log_loss=0.5571
+    seed=2025: OOF log_loss=0.5536
+    seed=777: OOF log_loss=0.5579
+    seed=555: OOF log_loss=0.5662
+  Ensemble OOF [S3]: 0.5497
+
+  === Target: S4 | pos_rate: 0.560 ===
+    seed=42: OOF log_loss=0.6448
+    seed=1234: OOF log_loss=0.6424
+    seed=9999: OOF log_loss=0.6328
+    seed=7: OOF log_loss=0.6473
+    seed=314: OOF log_loss=0.6442
+    seed=2025: OOF log_loss=0.6333
+    seed=777: OOF log_loss=0.6524
+    seed=555: OOF log_loss=0.6450
+  Ensemble OOF [S4]: 0.6320
+
+=======================================================
+  v9 Total OOF: 0.5834  (기대 Public ~ 0.6003)
+=======================================================
+  Q1: 0.6002
+  Q2: 0.5996
+  Q3: 0.6032
+  S1: 0.5378
+  S2: 0.5610
+  S3: 0.5497
+  S4: 0.6320
+제출 파일: submission.csv (250행)
